@@ -1,7 +1,7 @@
 #include <Arduino.h>
 #include <IRremote.h> // IRremote library statement
 
-int RECV_PIN = A2;    // define the pin of the IR receiver as A2
+int RECV_PIN = 3;    // define the pin of the IR receiver as A2
 int LED = 9;
 bool flag = 0;
 IRrecv irrecv(RECV_PIN);
@@ -31,8 +31,8 @@ void setup() {
 // FF5AA5 is the value of 9 key
 // FF4AB5 is the value of 0 key
 
-// FF42BD is the value of (*) CH+ key
-// FF52AD is the value of (#) CH- key
+// FF42BD is the value of (*) CH+ key asterisk
+// FF52AD is the value of (#) CH- key sharp
 
 
 void loop() {
